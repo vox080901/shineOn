@@ -1,0 +1,96 @@
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+}
+
+.send{
+    text-align: center;
+}
+
+.outter{
+    height: 400px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.submit{
+    width: 300px;
+    margin: auto;
+}
+
+#buttonsubmit{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.form-control{
+    margin-bottom: 10px;
+}
+
+#inner{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(169,169,169,0.8) ;
+}
+
+h2{
+    font-family: Georgia;
+    font-weight: bolder;
+}
+
+.icons{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(169,169,169,0.8);
+}
+
+.icon{
+    margin: 0 15px;
+}
+
+.tologin{
+    text-align: right;
+}
+
+.label-danger{
+    margin: 5px;
+}
+
+#login{
+    font-size: small;
+    color: #31b0d5;
+    border: 0;
+}
+
+#back{
+    border: 0;
+}
+
+.subinput{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+#password{
+    margin-top: 10px;
+}

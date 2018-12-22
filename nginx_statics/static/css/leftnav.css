@@ -1,0 +1,125 @@
+b{
+    color: black;
+}
+
+
+#leftnav{
+    width: 33.3%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(38,38,38,1);
+    position: fixed;
+    box-shadow: rgba(64,64,64,0.8) 0 0 3px 3px inset;
+}
+
+td{
+    text-align: center;
+}
+
+.tag{
+    position: fixed;
+    bottom: 25%;
+    left: 0;
+    background-color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    z-index: 1000000;
+}
+
+@media screen and (max-width: 500px) {
+.tag {
+    position: fixed;
+    top: 65%;
+    left: 0;
+    background-color: black;
+    padding-left: 3px;
+    padding-right: 3px;
+    z-index: 1000000;
+    height: 20px;
+}
+}
+
+.inside{
+    color: whitesmoke;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+    #leftnav{
+        width: 200px;
+        height: 100%;
+    }
+}
+
+
+.gl{
+    color: rgb(255,197,0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*border: 1px dashed slategrey;*/
+    text-align: center;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 20px;
+    fill-opacity: 50%;
+}
+
+.icons{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.left-title{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(153,153,153);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#tagnum, #catnum{
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.fork{
+    text-align: center;
+    color: rgb(255,197,0);
+    font-size: small;
+    font-family: Georgia;
+    font-weight: 600;
+}
+
+.contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.iconfield{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.left-content{
+
+}
+
+#lyrics{
+    text-align: center;
+    color: rgb(153,153,153);
+    font-family: "Bradley Hand ITC";
+    margin: 12px;
+}
+
+#lyric{
+    width: 80%;
+    margin: auto;
+}
+
+.tags, .cats{
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+
+}

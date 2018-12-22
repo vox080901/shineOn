@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/login.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="alert alert-success send hide" role="alert"></div>
+    <div class="outter">
+        <div class="submit" id="head">
+            <h2 class="animated flip">Login</h2>
+            <div class="alert alert-danger hide" role="alert"></div>
+        </div>
+        <div class="submit animated bounceInLeft" id="inner">
+            <input class="subinput form-control " type="email" id="email" placeholder="邮箱">
+            <input class="form-control " type="password" id="password" placeholder="密码(6~20位,不能包含特殊字符)">
+            <span id="passworderror" class="label label-danger authcodeerror hide"></span>
+            <button class="button button-inverse button-rounded disabled" id="buttonsubmit">login</button>
+        </div>
+        <div class="submit">
+            <div class="icons animated fadeInLeftBig">
+                <a href="#"
+                   class="icon animated swing infinite button button-circle button-action button-raised button-longshadow-right"><i
+                        class="fap fa fa-wechat"></i>
+                </a>
+                <a href="#"
+                   class="icon animated swing infinite button button-circle button-primary button-raised button-longshadow-right"><i
+                        class="fap fa fa-qq"></i>
+                </a>
+                <a href="#"
+                   class="icon animated swing infinite button button-circle button-caution button-raised button-longshadow-right"><i
+                        class="fap fa fa-weibo"></i>
+                </a>
+            </div>
+            <div class="tologin">
+            <a href="/articles/" class="button animated bounceInLeft" id="back"><i class="fa fa-reply"></i></a>
+            <a href="/submit/" class="button animated bounceInRight" id="login">没有帐号?注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-success" role="alert">邮箱登录注册可正常使用,三方登录注册功能尚未开放,vox拼命努力中!<i class="fa fa-wheelchair-alt"></i></div>
+</div>
+</body>
+</html>

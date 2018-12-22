@@ -1,0 +1,48 @@
+/* fonts */
+
+div.jqcloud {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: normal;
+}
+
+div.jqcloud a {
+  font-size: inherit;
+  text-decoration: dotted;
+}
+
+div.jqcloud span.w10 { font-size: 34px; }
+div.jqcloud span.w9 { font-size: 32px; }
+div.jqcloud span.w8 { font-size: 30px; }
+div.jqcloud span.w7 { font-size: 28px; }
+div.jqcloud span.w6 { font-size: 26px; }
+div.jqcloud span.w5 { font-size: 24px; }
+div.jqcloud span.w4 { font-size: 22px; }
+div.jqcloud span.w3 { font-size: 20px; }
+div.jqcloud span.w2 { font-size: 18px; }
+div.jqcloud span.w1 { font-size: 16px; }
+
+/* colors */
+
+div.jqcloud { color: #09f; }
+div.jqcloud a { color: inherit; }
+div.jqcloud a:hover { color: #EC87C0; }
+div.jqcloud a:hover { color: #EC87C0; }
+div.jqcloud span.w10 { color:#434A54; }
+div.jqcloud span.w9 { color: #434A54; }
+div.jqcloud span.w8 { color: #656D78; }
+div.jqcloud span.w7 { color: #656D78; }
+div.jqcloud span.w6 { color: #AAB2BD; }
+div.jqcloud span.w5 { color: #656D78; }
+div.jqcloud span.w4 { color: #AAB2BD; }
+div.jqcloud span.w3 { color: #CCD1D9; }
+div.jqcloud span.w2 { color: #CCD1D9; }
+div.jqcloud span.w1 { color: #CCD1D9; }
+/* layout */
+
+div.jqcloud {
+  overflow: hidden;
+  position: relative;
+}
+
+div.jqcloud span { margin: 5px; padding: 3px;border-bottom: 1px dashed rgba(169,169,169,0.5) }

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/articles.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/leftnav.css">
+    <link rel="stylesheet" href="../css/jquery.sidr.light.min.css">
+
+
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/articles.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/jquery.sidr.min.js"></script>
+
+    <title>blog</title>
+</head>
+<body id="body" style="width: 100%">
+
+<div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    欢迎你,这是ShineOnCrazy.com的测试版本,部分功能尚未开放,vox拼命努力中!<i class="fa fa-wheelchair-alt"></i></div><nav class="navbar navbar-default" id="navinfo">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="ham navbar-toggle collapsed" data-toggle="collapse" data-target="#datatarget"
+                    aria-expanded="false">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="/"><span><b>ShineOn</b><b id="username"></b></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="datatarget">
+            <ul class="nav navbar-nav" id="leftul">
+                <li><a href="/" class="ulspan animated fadeInDown"><i class="fa fa-sun-o fa-spin"></i><span class="n-title">首页</span></a></li>
+                <li><a href="/login/" class="ulspan animated fadeInDown"><span><i class="fa fa-address-card"></i>登录</span></a></li>
+                <li><a href="/files/" class="ulspan animated fadeInDown"><i class="fa fa-briefcase"></i><span class="n-title">归档</span></a></li>
+                <li><a href="/categories/" class="ulspan animated fadeInDown"><i class="fa fa-folder-open"></i><span class="n-title">分类</span></a></li>
+                <li><a href="/tags/" class="ulspan animated fadeInDown"><i class="fa fa-tags"></i><span class="n-title">标签</span></a></li>
+                <!--<li><a href="#" class="ulspan animated fadeInDown"><span >登录</span></a></li>-->
+                <li><a href="#" class="ulspan animated fadeInDown"><i class="fa fa-flag"></i><span class="n-title">关于</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<a class="tag animated bounceInDown" id="left-menu" href="#leftnav"><span
+        class="inside glyphicon glyphicon-align-justify"></span></a>
+<div id="leftnav">
+    <div class="gl">Overview</div>
+
+    <div id="lyric">
+    <p id="lyrics">
+        remember when you were yong,
+        you shone like the sun.
+    </p>
+
+    </div>
+
+    <div class="left-content">
+    <div class="cats">
+        <a class="a-title left-title" href="/categories/">分类
+        <span class="left-num" id="catnum"></span>
+        </a>
+    </div>
+    <div class="tags">
+        <a class="a-title left-title" href="/tags/">标签
+            <span class="left-num" id="tagnum"></span>
+        </a>
+    </div>
+    <div class="contact">
+        <p class="fork">Fork me on</p>
+        <div class="icons">
+            <span class="iconfield">
+                <a href="https://github.com/vox080901" class="icon button button-inverse button-box"><i class="fap fa fa-github fa-2x"></i></a>
+            </span>
+        </div>
+        <div class="icons">
+            <span class="iconfield">
+             <a href="#" class="icon button button-circle button-primary button-raised button-longshadow-right"><i class="fap fa fa-twitter"></i></a>
+             </span>
+            <span class="iconfield">
+            <a href="https://weibo.com/p/1005055889295049?is_all=1" class="icon button button-circle button-caution button-raised button-longshadow-right"><i class="fap fa fa-weibo"></i></a>
+            </span>
+        </div>
+    </div>
+        </div>
+</div>
+<div class="wrapper">
+    <div class="container animated slideInUp">
+        <div class="caption">
+            <h3><b class="title"></b></h3>  <!-- 标题 -->
+            <div class="articleinfo">  <!-- 细节信息 -->
+                <span class="pinfo glyphicon glyphicon-education "></span>
+                <span class="ainfo author_name"></span>
+                <span class="pinfo glyphicon glyphicon-book"></span>
+                <span class="ainfo">发表于</span>
+                <span class="ainfo create_time"></span>
+                <span class="pinfo"><i class="fa fa-edit"></i></span>
+                <span class="ainfo">更新于</span>
+                <span class="ainfo update_time"></span>
+                <span class="ainfo">分类于</span>
+                <span class="pinfo glyphicon glyphicon-folder-open"></span>
+                <span class="ainfo category"></span>
+                <span class="pinfo"><i class="fa fa-eye"></i></span>
+                <span class="ainfo">阅读量</span>
+                <span class="ainfo readcount" id="read"></span>
+            </div>
+
+            <div class="page-header summary"><i id="summary"></i></div>  <!-- 摘要 -->
+            <div class="artcle">
+            </div>  <!-- 文章 -->
+            <div id="tags">
+                <a href="/tags/"><span class="animated swing infinite tagicon pinfo glyphicon glyphicon-tags"><span
+                        id="bq">标签</span></span></a>
+                <span class="atags tagicon"></span>
+            </div>
+            <div class="upordown">  <!-- 点赞/踩 -->
+                <div class="uodimg">
+                    <img class="upimg img" src="../imgs/up.png" alt="赞">
+                    <img class="downimg img" src="../imgs/down.png" alt="踩">
+                </div>
+                <div class="count">
+                    <span class="number upnumber"></span>
+                    <span class="number downnumber"></span>
+                </div>
+                <div><span class="label label-success hide">完成!感谢您的参与!</span></div>
+                <div><span class="label label-warning hide">一个账号只能点一次哟~</span></div>
+                <div><span class="label label-info hide">请先<a href="/login/">登录</a>哟~</span></div>
+            </div>
+
+            <div></div>  <!-- 评论 -->
+        </div>
+    </div>
+
+
+
+</div>
+
+<footer class="footer animated bounceInUp">
+    <div class="text">
+        <h4><strong>ShineOnCrazy.com</strong>, make things easier. </h4>
+        <p class="f">作者邮箱: vox080901@163.com</p>
+        <p class="f">关于作者: <span><a class="faf" href="#">Vox</a></span></p>
+        <p class="f">本博客服务器由<a class="faf" href="https://www.aliyun.com/">阿里云</a>提供.</p>
+    </div>
+</footer>
+<div class="clear"></div>
+
+</body>
+</html>

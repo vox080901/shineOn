@@ -1,0 +1,80 @@
+#body{
+    overflow-x: hidden;
+}
+
+#read{
+    border: none;
+}
+
+.caption{
+    text-align: center;
+    padding: 0 30px 0 30px;
+}
+
+.ainfo{
+    padding-right: 3px;
+    border-right: 0.5px solid rgba(169,169,169,0.8) ;
+}
+
+.ainfo,.pinfo{
+    color: rgba(169,169,169,0.8);
+}
+
+.summary{
+    padding: 9px;
+    border: 2px dashed rgba(231, 235, 238, 1);
+}
+
+#summary{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.artcle{
+    font-size: 17px;
+    font-family: 幼圆;
+    font-weight: bold;
+    text-align: left;
+}
+
+.upordown{
+    padding: 20px 20px;
+    border-top: 2px rgba(231, 235, 238, 1) solid;
+    border-bottom: 2px rgba(231, 235, 238, 1) solid;
+    margin: 10px 0 20px 0;
+}
+
+img{
+    height: 23px;
+    width: 23px;
+}
+
+@media screen and (max-width: 500px){
+    img{
+    height: 10%;
+    width: 10%;
+}
+}
+
+.img{
+    margin: 0 15%;
+}
+
+.number{
+    margin: 0 15.6%;
+}
+
+#tags{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 2px dotted rgba(231,235,238,1) ;
+    text-align: left;
+}
+
+#bq{
+    padding: 0 10px 0 4px;
+}
+
+#tags a {
+    margin-left: 10px;
+}

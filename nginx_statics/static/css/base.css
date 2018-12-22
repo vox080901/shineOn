@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+}
+
+.wrapper{
+    margin-top: 6%;
+}
+
+@media (min-width: 1070px){
+.navbar-toggle{display: none}
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height:100%;
+    position:relative;
+    overflow-x: hidden;
+}
+
+
+#leftul{
+    float: right;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+#leftul:after{
+    clear: both;
+    width: 45px;
+}
+
+b{
+    font-size: 25px;
+    font-family: "Lucida Fax";
+}
+
+.fadeInDown{
+    font-size: 13px;
+    position: relative;
+    left: 20%;
+    animation-duration: 1s;
+}
+
+.animated{
+    animation-duration: 2s;
+}
+
+.footer{
+    height: 130px;
+    width: 100%;
+    background-color: rgba(55,50,57,1);
+    position: absolute;
+    bottom: 0;
+}
+
+.cpinfo{
+    margin-bottom: 0;
+    border: 0;
+    padding: 0;
+}
+
+#navinfo{
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    margin:auto;
+    z-index: 1000000;
+}
+
+#datatarget{
+    /*padding-right: 30px;*/
+    overflow: hidden;
+}
+
+.clear{
+    height: 130px;
+}
+.text{
+    text-align: center;
+}
+h4{color: white;font-weight: lighter}
+/*112, 127, 139*/
+
+.f {
+    color: rgba(112,127,139,1);
+    font-size: small;
+
+}
+.faf{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover,a:active{text-decoration: none; color: rgb(255,197,0)}
+
+.n-title{
+    padding: 2px;
+}
+
+#username{
+    padding-left: 10px;
+    color: rgb(255,197,0);
+}

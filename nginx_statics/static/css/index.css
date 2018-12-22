@@ -1,0 +1,30 @@
+#body {
+    background-image: url("../imgs/wall2.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.content{
+    text-align: center;
+    font-family: 黑体;
+    font-size: 17px;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+    overflow: hidden;
+    /*animation-timing-function: cubic-bezier(100,1,1,1);*/
+}
+
+#author{
+    display: block;
+    position: relative;
+    left: 10%;
+    overflow: hidden;
+}
+
+.middle{
+    width: 100%;
+    position: absolute;
+    top: 33%;
+    overflow: hidden;
+}

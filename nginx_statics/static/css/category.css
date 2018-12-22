@@ -1,0 +1,19 @@
+.categories{
+    text-align: center;
+    font-size: 25px;
+    font-family: Georgia;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.count-p{
+    text-align: center;
+    font-size: 10px;
+    font-family: 黑体;
+    font-weight: lighter;
+}
+
+#cloud{
+    border: 1px dashed  rgba(231, 235, 238, 1);
+    border-radius: 10% 10% 10% 10%;
+}

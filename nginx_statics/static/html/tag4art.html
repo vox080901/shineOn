@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/leftnav.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/cat4art.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/jquery.sidr.light.min.css">
+
+
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/base.js"></script>
+    <script type="text/javascript" src="../js/tag4art.js"></script>
+    <script type="text/javascript" src="../js/jquery.sidr.min.js"></script>
+
+    <title>标签详情</title>
+</head>
+<body id="body">
+<div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    欢迎你,这是ShineOnCrazy.com的测试版本,部分功能尚未开放,vox拼命努力中!<i class="fa fa-wheelchair-alt"></i></div>
+
+<nav class="navbar navbar-default" id="navinfo">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="ham navbar-toggle collapsed" data-toggle="collapse" data-target="#datatarget"
+                    aria-expanded="false">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand animated bounceInLeft" href="/"><span><b>ShineOn</b><b id="username"></b></span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="datatarget">
+            <ul class="nav navbar-nav" id="leftul">
+                <li><a href="/" class="ulspan animated fadeInDown"><i class="fa fa-sun-o fa-spin"></i><span class="n-title">首页</span></a></li>
+                                <li><a href="/login/" class="ulspan animated fadeInDown"><span><i class="fa fa-address-card"></i>登录</span></a></li>
+
+                <li><a href="/files/" class="ulspan animated fadeInDown"><i class="fa fa-briefcase"></i><span class="n-title">归档</span></a></li>
+                <li><a href="/categories/" class="ulspan animated fadeInDown"><i class="fa fa-folder-open"></i><span class="n-title">分类</span></a></li>
+                <li><a href="/tags/" class="ulspan animated fadeInDown"><i class="fa fa-tags"></i><span class="n-title">标签</span></a></li>
+                <!--<li><a href="#" class="ulspan animated fadeInDown"><span >登录</span></a></li>-->
+                <li><a href="#" class="ulspan animated fadeInDown"><i class="fa fa-flag"></i><span class="n-title">关于</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<a class="tag animated bounceInDown" id="left-menu" href="#leftnav"><span
+        class="inside glyphicon glyphicon-align-justify"></span></a>
+<div id="leftnav">
+    <div class="gl">Overview</div>
+
+    <div id="lyric">
+    <p id="lyrics">
+        remember when you were yong,
+        you shone like the sun.
+    </p>
+
+    </div>
+
+    <div class="left-content">
+    <div class="cats">
+        <a class="a-title left-title" href="/categories/">分类
+        <span class="left-num" id="catnum"></span>
+        </a>
+    </div>
+    <div class="tags">
+        <a class="a-title left-title" href="/tags/">标签
+            <span class="left-num" id="tagnum"></span>
+        </a>
+    </div>
+    <div class="contact">
+        <p class="fork">Fork me on</p>
+                <div class="icons">
+            <span class="iconfield">
+                <a href="https://github.com/vox080901" class="icon button button-inverse button-box"><i class="fap fa fa-github fa-2x"></i></a>
+            </span>
+        </div>
+        <div class="icons">
+            <span class="iconfield">
+             <a href="#" class="icon button button-circle button-primary button-raised button-longshadow-right"><i class="fap fa fa-twitter"></i></a>
+             </span>
+            <span class="iconfield">
+            <a href="https://weibo.com/p/1005055889295049?is_all=1" class="icon button button-circle button-caution button-raised button-longshadow-right"><i class="fap fa fa-weibo"></i></a>
+            </span>
+        </div>
+    </div>
+        </div>
+</div>
+<div class="wrapper tagwrapper">
+    <div class="container">
+        <div class="topinfo animated rotateIn">
+            <span class="animated swing infinite icon glyphicon glyphicon-tag"></span>
+            <span id="catname"></span>
+            <span class="cat">标签</span>
+        </div>
+
+        <div class="count">
+            <span class="count-span">共</span>
+            <span id="count-num" class="animated flash"></span>
+            <span class="count-span">篇</span>
+        </div>
+
+        <div class="ul animated bounceInUp">
+            <ul id="ul"></ul>
+        </div>
+
+        <nav aria-label="">
+            <ul class="pager">
+                <li class="pre animated fadeInLeftBig"><a id="pre"><<</a></li>
+                <li class="nex animated fadeInRightBig"><a id="nex">>></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<footer class="footer animated bounceInUp">
+    <div class="text">
+        <h4><strong>ShineOnCrazy.com</strong>, make things easier. </h4>
+        <p class="f">作者邮箱: vox080901@163.com</p>
+        <p class="f">关于作者: <span><a class="faf" href="#">Vox</a></span></p>
+        <p class="f">本博客服务器由<a class="faf" href="https://www.aliyun.com/">阿里云</a>提供.</p>
+    </div>
+</footer>
+<div class="clear"></div>
+
+
+</body>
+</html>
