@@ -88,11 +88,11 @@ WSGI_APPLICATION = 'shineOn.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        "HOST": "47.98.239.102",
+        "HOST": "",
         "PORT": 3306,
-        "PASSWORD": "123456",
-        "NAME": "shineOn",
-        "USER": "root"
+        "PASSWORD": "",
+        "NAME": "",
+        "USER": ""
     }
 }
 
@@ -138,10 +138,10 @@ STATIC_URL = '/static/'
 
 # Session
 SESSION_ENGINE = "redis_sessions.session"
-SESSION_REDIS_HOST = "47.98.239.102"
+SESSION_REDIS_HOST = ""
 SESSION_REDIS_PORT = 6379
 SESSION_REDIS_DB = 0
-SESSION_REDIS_PASSWORD = '123456'
+SESSION_REDIS_PASSWORD = ''
 SESSION_REDIS_PREFIX = "sKey"
 SESSION_COOKIE_NAME = "sessionid" # ---> 默认为sessionid
 SESSION_COOKIE_PATH = "/" # --->
@@ -153,7 +153,7 @@ SESSION_SAVE_EVERY_REQUEST = False # ---> 是否每次请求都保存session
 
 # celery
 djcelery.setup_loader()
-BROKER_URL = "redis://:123456@47.98.239.102:6379/2"
+BROKER_URL = "redis://:mima@ip:6379/2"
 CELERY_IMPORTS = "crazyDimond.task"
 AUTH_CODE_LIST = "0123456789"
 
@@ -161,19 +161,19 @@ AUTH_CODE_LIST = "0123456789"
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'd1653461292@163.com'
-EMAIL_HOST_PASSWORD = 'd1653461292'
-EMAIL_FROM = 'ShineOnCrazy.com<d1653461292@163.com>'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = 'd1'
+EMAIL_FROM = 'ShineOnCrazy.com<d1@163.com>'
 EMAIL_USE_SSL = True
 
 # cache 默认1库
 CACHES = {
     'default': {
         'BACKEND': 'redis_cache.cache.RedisCache',
-        'LOCATION': '47.98.239.102:6379',
+        'LOCATION': ':6379',
         'TIMEOUT': 60*60*24*7,
         'OPTIONS': {
-            'PASSWORD': '123456',
+            'PASSWORD': '',
             # 'CLIENT_CLASS': 'redis_cache.client.DefaultClient'
         }
     }

@@ -93,7 +93,7 @@ class UserInfoVerification(object):
         self.ip_addr = ip_addr
 
     def verify(self):
-        r = redis.Redis(host="127.0.0.1", password="123456")
+        r = redis.Redis(host="", password="")
         msg = {}
         try:
             mail_auth_code = r.get(self.account).decode()
